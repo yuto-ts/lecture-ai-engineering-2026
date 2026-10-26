@@ -1,0 +1,36 @@
+[gemini-3.5-flash-lite]   1: ok  
+[gemini-3.5-flash-lite]   2: ok  
+[gemini-3.5-flash-lite]   3: ok  
+[gemini-3.5-flash-lite]   4: ok  
+[gemini-3.5-flash-lite]   5: ok  
+[gemini-3.5-flash-lite]   6: ok  
+[gemini-3.5-flash-lite]   7: ok  
+[gemini-3.5-flash-lite]   8: ok  
+[gemini-3.5-flash-lite]   9: ok  
+[gemini-3.5-flash-lite]  10: ok  
+[gemini-3.5-flash-lite]  11: ok  
+[gemini-3.5-flash-lite]  12: ok  
+[gemini-3.5-flash-lite]  13: ok  
+[gemini-3.5-flash-lite]  14: ok  
+[gemini-3.5-flash-lite]  15: ok  
+[gemini-3.5-flash-lite]  16: ok  
+[gemini-3.5-flash-lite]  17: ok  
+[gemini-3.5-flash-lite]  18: 429 GenerateRequestsPerMinutePerProjectPerModel-FreeTier 15
+[gemini-3.5-flash-lite]  19: 429 GenerateRequestsPerMinutePerProjectPerModel-FreeTier 15
+[gemini-3.5-flash-lite]  20: 429 GenerateRequestsPerMinutePerProjectPerModel-FreeTier 15
+[gemini-3.5-flash-lite]  21: 429 GenerateRequestsPerMinutePerProjectPerModel-FreeTier 15
+[gemini-3.5-flash-lite]  22: ok  
+[gemini-3.5-flash-lite]  23: 429 GenerateRequestsPerMinutePerProjectPerModel-FreeTier 15
+[gemini-3.5-flash-lite]  24: 429 GenerateRequestsPerMinutePerProjectPerModel-FreeTier 15
+[gemini-3.5-flash-lite]  25: 429 GenerateRequestsPerMinutePerProjectPerModel-FreeTier 15
+[gemini-3.5-flash-lite]  26: ok  
+[gemini-3.5-flash-lite]  27: 429 GenerateRequestsPerMinutePerProjectPerModel-FreeTier 15
+[gemini-3.5-flash-lite]  28: 429 GenerateRequestsPerMinutePerProjectPerModel-FreeTier 15
+[gemini-3.5-flash-lite]  29: 429 GenerateRequestsPerMinutePerProjectPerModel-FreeTier 15
+[gemini-3.5-flash-lite]  30: 429 GenerateRequestsPerMinutePerProjectPerModel-FreeTier 15
+
+[saved] lectures/01/results/burst.csv
+
+model                 | question | ok    | ttft_s | total_s | input | output | thoughts | tok_per_s
+----------------------|----------|-------|--------|---------|-------|--------|----------|----------
+gemini-3.5-flash-lite | burst    | 19/30 | 0.64   | 0.71    | 11    | 1      | 0        | 1.41     
