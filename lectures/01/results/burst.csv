@@ -1,0 +1,31 @@
+model,question,rep,status,ttft_s,total_s,input_tokens,output_tokens,thoughts_tokens,output_chars,quota_id,quota_value,retry_delay,error
+gemini-3.5-flash-lite,burst,1,ok,0.8404441669990774,0.8718553750004503,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,2,ok,1.0458200000030047,1.1011869169997226,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,3,ok,0.5426052500006335,0.6086287500002072,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,4,ok,0.5510759580029116,0.6177032500017958,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,5,ok,1.6259874589995889,1.67753520900078,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,6,ok,0.6656944169990311,0.7251547080013552,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,7,ok,0.64273170800152,0.7039223330029927,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,8,ok,0.6412105420022272,0.7086882920011703,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,9,ok,0.49077616700014914,0.549517499999638,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,10,ok,1.092911916999583,1.0973827919988253,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,11,ok,0.513547833001212,0.5672027500004333,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,12,ok,0.5027927910014114,0.5696940000016184,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,13,ok,0.5227574169985019,0.619707957997889,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,14,ok,0.7909724579985777,0.8458155830012402,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,15,ok,0.6280092499982857,0.6821862910001073,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,16,ok,0.467226083001151,0.5242392500003916,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,17,ok,2.0565570419967116,2.129814041996724,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,18,429,,,,,,,GenerateRequestsPerMinutePerProjectPerModel-FreeTier,15,24s,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa"
+gemini-3.5-flash-lite,burst,19,429,,,,,,,GenerateRequestsPerMinutePerProjectPerModel-FreeTier,15,24s,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa"
+gemini-3.5-flash-lite,burst,20,429,,,,,,,GenerateRequestsPerMinutePerProjectPerModel-FreeTier,15,24s,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa"
+gemini-3.5-flash-lite,burst,21,429,,,,,,,GenerateRequestsPerMinutePerProjectPerModel-FreeTier,15,23s,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa"
+gemini-3.5-flash-lite,burst,22,ok,2.6056903330027126,2.660304000000906,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,23,429,,,,,,,GenerateRequestsPerMinutePerProjectPerModel-FreeTier,15,21s,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa"
+gemini-3.5-flash-lite,burst,24,429,,,,,,,GenerateRequestsPerMinutePerProjectPerModel-FreeTier,15,20s,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa"
+gemini-3.5-flash-lite,burst,25,429,,,,,,,GenerateRequestsPerMinutePerProjectPerModel-FreeTier,15,20s,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa"
+gemini-3.5-flash-lite,burst,26,ok,0.7197906250003143,0.7719080419992679,11,1,,1,,,,
+gemini-3.5-flash-lite,burst,27,429,,,,,,,GenerateRequestsPerMinutePerProjectPerModel-FreeTier,15,19s,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa"
+gemini-3.5-flash-lite,burst,28,429,,,,,,,GenerateRequestsPerMinutePerProjectPerModel-FreeTier,15,19s,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa"
+gemini-3.5-flash-lite,burst,29,429,,,,,,,GenerateRequestsPerMinutePerProjectPerModel-FreeTier,15,19s,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa"
+gemini-3.5-flash-lite,burst,30,429,,,,,,,GenerateRequestsPerMinutePerProjectPerModel-FreeTier,15,19s,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usa"

@@ -1,0 +1,69 @@
+(1/48) gemini-3.5-flash-lite short #1: ok total=0.89 out=50 
+(2/48) gemini-3.5-flash-lite normal #1: ok total=2.63 out=592 
+(3/48) gemini-3.5-flash-lite course #1: ok total=3.63 out=743 
+(4/48) gemini-3.5-flash-lite long #1: ok total=5.36 out=1219 
+(5/48) gemini-3.1-flash-lite short #1: ok total=2.88 out=39 
+(6/48) gemini-3.1-flash-lite normal #1: ok total=8.27 out=677 
+(7/48) gemini-3.1-flash-lite course #1: ok total=6.44 out=569 
+(8/48) gemini-3.1-flash-lite long #1: ok total=6.13 out=912 
+(9/48) gemini-3.5-flash short #1: ok total=5.8 out=53 
+(10/48) gemini-3.5-flash normal #1: ok total=11.34 out=731 
+(11/48) gemini-3.5-flash course #1: ok total=12.47 out=551 
+(12/48) gemini-3.5-flash long #1: ok total=66.24 out=1872 
+(13/48) gemini-2.5-flash short #1: 404 total=None out=None 
+(14/48) gemini-2.5-flash normal #1: 404 total=None out=None 
+(15/48) gemini-2.5-flash course #1: 404 total=None out=None 
+(16/48) gemini-2.5-flash long #1: 404 total=None out=None 
+(17/48) gemini-3.5-flash-lite short #2: ok total=0.79 out=51 
+(18/48) gemini-3.5-flash-lite normal #2: ok total=3.67 out=688 
+(19/48) gemini-3.5-flash-lite course #2: ok total=3.04 out=539 
+(20/48) gemini-3.5-flash-lite long #2: ok total=5.44 out=1414 
+(21/48) gemini-3.1-flash-lite short #2: ok total=6.11 out=41 
+(22/48) gemini-3.1-flash-lite normal #2: ok total=5.76 out=686 
+(23/48) gemini-3.1-flash-lite course #2: ok total=7.75 out=594 
+(24/48) gemini-3.1-flash-lite long #2: ok total=4.25 out=944 
+(25/48) gemini-3.5-flash short #2: ok total=3.73 out=53 
+(26/48) gemini-3.5-flash normal #2: ok total=13.73 out=783 
+(27/48) gemini-3.5-flash course #2: ok total=12.55 out=551 
+(28/48) gemini-3.5-flash long #2: ok total=67.28 out=1894 
+(29/48) gemini-2.5-flash short #2: 404 total=None out=None 
+(30/48) gemini-2.5-flash normal #2: 404 total=None out=None 
+(31/48) gemini-2.5-flash course #2: 404 total=None out=None 
+(32/48) gemini-2.5-flash long #2: 404 total=None out=None 
+(33/48) gemini-3.5-flash-lite short #3: ok total=0.98 out=45 
+(34/48) gemini-3.5-flash-lite normal #3: ok total=2.19 out=453 
+(35/48) gemini-3.5-flash-lite course #3: ok total=1.72 out=275 
+(36/48) gemini-3.5-flash-lite long #3: ok total=4.44 out=1087 
+(37/48) gemini-3.1-flash-lite short #3: ok total=1.25 out=42 
+(38/48) gemini-3.1-flash-lite normal #3: ok total=6.06 out=807 
+(39/48) gemini-3.1-flash-lite course #3: ok total=3.63 out=617 
+(40/48) gemini-3.1-flash-lite long #3: ok total=4.47 out=939 
+(41/48) gemini-3.5-flash short #3: ok total=3.96 out=52 
+(42/48) gemini-3.5-flash normal #3: ok total=10.83 out=750 
+(43/48) gemini-3.5-flash course #3: ok total=13.62 out=727 
+(44/48) gemini-3.5-flash long #3: ok total=23.87 out=2006 
+(45/48) gemini-2.5-flash short #3: 404 total=None out=None 
+(46/48) gemini-2.5-flash normal #3: 404 total=None out=None 
+(47/48) gemini-2.5-flash course #3: 404 total=None out=None 
+(48/48) gemini-2.5-flash long #3: 404 total=None out=None 
+
+[saved] lectures/01/results/bench.csv
+
+model                 | question | ok  | ttft_s | total_s | input | output | thoughts | tok_per_s
+----------------------|----------|-----|--------|---------|-------|--------|----------|----------
+gemini-3.5-flash-lite | short    | 3/3 | 0.60   | 0.89    | 14    | 50     | 0        | 56.00    
+gemini-3.5-flash-lite | normal   | 3/3 | 0.56   | 2.63    | 7     | 592    | 0        | 224.92   
+gemini-3.5-flash-lite | course   | 3/3 | 0.73   | 3.04    | 21    | 539    | 0        | 177.03   
+gemini-3.5-flash-lite | long     | 3/3 | 0.66   | 5.36    | 22    | 1219   | 0        | 227.22   
+gemini-3.1-flash-lite | short    | 3/3 | 2.70   | 2.88    | 14    | 41     | 0        | 14.24    
+gemini-3.1-flash-lite | normal   | 3/3 | 3.60   | 6.06    | 7     | 686    | 0        | 113.24   
+gemini-3.1-flash-lite | course   | 3/3 | 4.35   | 6.44    | 21    | 594    | 0        | 92.24    
+gemini-3.1-flash-lite | long     | 3/3 | 1.54   | 4.47    | 22    | 939    | 0        | 210.16   
+gemini-3.5-flash      | short    | 3/3 | 3.66   | 3.96    | 14    | 53     | 540      | 149.76   
+gemini-3.5-flash      | normal   | 3/3 | 6.49   | 11.34   | 7     | 750    | 1003     | 154.61   
+gemini-3.5-flash      | course   | 3/3 | 8.80   | 12.55   | 21    | 551    | 1155     | 135.90   
+gemini-3.5-flash      | long     | 3/3 | 53.36  | 66.24   | 22    | 1894   | 1375     | 49.35    
+gemini-2.5-flash      | short    | 0/3 | -      | -       | -     | -      | -        | -        
+gemini-2.5-flash      | normal   | 0/3 | -      | -       | -     | -      | -        | -        
+gemini-2.5-flash      | course   | 0/3 | -      | -       | -     | -      | -        | -        
+gemini-2.5-flash      | long     | 0/3 | -      | -       | -     | -      | -        | -        
