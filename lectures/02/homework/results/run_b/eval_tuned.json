@@ -1,0 +1,184 @@
+{
+  "summary": {
+    "label": "tuned",
+    "seconds": 161.7,
+    "seen_correct": "8/8",
+    "seen_similarity": 1.0,
+    "paraphrase_correct": "3/8",
+    "paraphrase_similarity": 0.445,
+    "unknown_correct": "0/6",
+    "unknown_abstained": "2/6"
+  },
+  "rows": [
+    {
+      "kind": "seen",
+      "question": "「LoRA」とは何ですか？",
+      "raw": "事前学習済みの重みは固定したまま、重みの更新分を2つの小さな行列の積（低ランク行列）で表し、その小さな行列だけを学習するPEFT手法。学習するパラメータが少なく、学習結果（アダプタ）も小さいファイルで保存できる。本講座の第2回演習ではLoRAを扱う。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0
+    },
+    {
+      "kind": "seen",
+      "question": "「ハルシネーション」とは何ですか？",
+      "raw": "LLMが事実と異なる内容や存在しない情報を、もっともらしく生成してしまう現象。モデルが知らないこと（最新情報、組織や講座に固有の情報など）を聞いたときに起きやすい。外部データをツールで参照させる、根拠を示させる、評価で検出する、などで抑える。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0
+    },
+    {
+      "kind": "seen",
+      "question": "「既定モデル」とは何ですか？",
+      "raw": "AIE2026の演習と宿題で標準に使うモデルは gemini-3.5-flash-lite。無料枠のレート制限と講座運営の安定性を考えて選んでいる。環境変数 AIE_MODEL で他のモデルに切り替えてよく、自分で契約したAPIを使ってもよい。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0
+    },
+    {
+      "kind": "seen",
+      "question": "「宿題の3レベル」とは何ですか？",
+      "raw": "AIE2026の宿題の構成。「基礎（講義内容の確認）」「実装（自分でコードを書く）」「発展（調査や試行）」の3段階があり、どれか1つに取り組めばその回の宿題は完了。原則として採点はしない。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0
+    },
+    {
+      "kind": "seen",
+      "question": "「lecNN-start タグ」とは何ですか？",
+      "raw": "AIE2026の講座repoで、各回の演習開始時点のコードに付けているGitタグ（例：lec03-start）。前の回が終わっていなくても、このタグからブランチを作ればその回の演習を始められる。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0
+    },
+    {
+      "kind": "seen",
+      "question": "「Pi」とは何ですか？",
+      "raw": "ターミナルで動くオープンソース（MITライセンス）のコーディングエージェント。最小限の機能とシステムプロンプトで構成し、利用者が拡張して使う設計。2026年10月に1.0が公開された。npmのパッケージ名は @earendil-works/pi-coding-agent。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0
+    },
+    {
+      "kind": "seen",
+      "question": "「answer.md」とは何ですか？",
+      "raw": "AIE2026で各回の演習・宿題の結果を書くファイル。lectures/NN/answer.md にあり、取り組んだレベル・やったこと・結果・気づきを記入して、作業ブランチから自分のforkの main へPRを出して提出する。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0
+    },
+    {
+      "kind": "seen",
+      "question": "「ツールの名前空間」とは何ですか？",
+      "raw": "複数のMCPサーバーを使うとき、同じ名前のツールを区別するために「サーバー名_ツール名」のように接頭辞を付けること。本講座の app/agent.py は設定ファイルのサーバー名を自動で付ける（例: glossary_search_glossary。Pydantic AIの load_mcp_toolsets も同じ）。ツールが増えるほどモデルに渡す説明文も増え、呼び分けの精度とトークン数に影響する。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0
+    },
+    {
+      "kind": "paraphrase",
+      "question": "Low-Rank Adaptation ってどういう仕組みですか？",
+      "raw": "事前学習済みの重みは固定したまま、重みの更新分を2つの小さな行列の積（低ランク行列）で表し、その小さな行列だけを学習するPEFT手法。学習するパラメータが少なく、学習結果（アダプタ）も小さいファイルで保存できる。本講座の第2回演習ではLoRAを扱う。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0
+    },
+    {
+      "kind": "paraphrase",
+      "question": "AIE2026 の演習で標準的に使うモデルはどれですか？",
+      "raw": "Googleの AI Engineering の講座で、宿題の発展レベルで使うモデルはすべて gemini-3.5-flash-lite。無料枠のレート制限と講座運営の安定性を考えて選んでいる。枠を超えるとレート制限やレート制限エラーが起きる。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.541
+    },
+    {
+      "kind": "paraphrase",
+      "question": "この講座の宿題はどんなレベル分けになっていますか？",
+      "raw": "AIE2026の宿題のレベル分け。基礎の復習＋実装から、設計図を書く、実装を依頼する3段階で作業を進める。本講座は基礎＋実装の2段階。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.335
+    },
+    {
+      "kind": "paraphrase",
+      "question": "Pi coding agent はどんなソフトウェアですか？",
+      "raw": "ターミナルで動くオープンソース（MITライセンス）のコーディングエージェント。最小限の機能とシステムプロンプトで構成し、利用者が拡張して使う設計。2026年10月に1.0が公開された。npmのパッケージ名は @earendil-works/pi-coding-agent。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0
+    },
+    {
+      "kind": "paraphrase",
+      "question": "LLM がもっともらしい嘘をつく現象を何と呼びますか？",
+      "raw": "入力に続く出力を予測し、実際の出力とが違うとき、予測が正しい方向に偏った、または全く違う出力を返す行為。モデルが知らないこと（外部データ、事実と異なる、最新にないなど）を出力する、ひいては事実を伝える、その中の1つは造謫（謬誤）の例。造謫は1つの質問で多くの回で起きる、どこにも限らない、気づくのも難しい、という性質がある。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.212
+    },
+    {
+      "kind": "paraphrase",
+      "question": "複数の MCP サーバーでツール名がぶつかるときはどうしますか？",
+      "raw": "AIE2026の演習と宿題で、各回の演習・宿題で同じmcpServers設定する（同じ回の内容や演習内容に合ったツールを選める）。回を数回挟むとツール名が重複し、自分で設定したAPIキーも共用しやすくなる。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.046
+    },
+    {
+      "kind": "paraphrase",
+      "question": "QLoRA は LoRA と何が違いますか？",
+      "raw": "LoRAで使う小さな行列の大きさを決めるハイパーパラメータ。LoRAで使う小さな行列の大きさを決めるハイパーパラメータ。LoRAで使う小さな行列の大きさを決めるハイパーパラメータ。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.174
+    },
+    {
+      "kind": "paraphrase",
+      "question": "この講座の宿題の結果はどのファイルに書いて提出しますか？",
+      "raw": "AIE2026の宿題は、各回の演習で使うsameのコードを書くので、回を数回や更新を回越多く続けると結果が異なる。本講座では回を3回作る。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.251
+    },
+    {
+      "kind": "unknown",
+      "question": "「RAG」とは何ですか？",
+      "raw": "LLMの周りをループで情報源（文档、知识库、网页など）を調査し、調査結果をモデルに渡してモデルが判断して次の行動を決める、をモデルが直接扱えない領域。その中の「調査ループ」は特に重要。",
+      "correct": false,
+      "abstained": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「知識蒸留」とは何ですか？",
+      "raw": "「知識蒸留」は講座の用語集に記載がありません。講義資料か運営に確認が必要です。",
+      "correct": false,
+      "abstained": true
+    },
+    {
+      "kind": "unknown",
+      "question": "「RLHF」とは何ですか？",
+      "raw": "入力と望ましい出力のペア（例：質問と模範回答）を使ってモデルを追加学習させる方法。指示に従う振る舞いを身につけさせる代表的な手法。",
+      "correct": false,
+      "abstained": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「ベクトルデータベース」とは何ですか？",
+      "raw": "「ベクトルデータベース」は講座の用語集に記載がありません。講義資料か運営に確認が必要です。",
+      "correct": false,
+      "abstained": true
+    },
+    {
+      "kind": "unknown",
+      "question": "「Mixture of Experts」とは何ですか？",
+      "raw": "複数のモデルを1つの入力に分割し、各モデルでよくあることと不よくあることを分ける。よくある入力に「基礎モデル」を渡して、その結果がよいときその基礎モデルを最終回答返す。結果が良くないときは、次の基礎モデルでさらに進める。このような進め方こそがMCPのエージェントの心臓部。",
+      "correct": false,
+      "abstained": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「プロンプトインジェクション」とは何ですか？",
+      "raw": "エージェントの処理の途中に人の確認や承認を組み込むこと。データの書き込みや送信など、取り消しにくい操作の前に使う。Pydantic AIでは requires_approval=True を指定したツールで実現できる。",
+      "correct": false,
+      "abstained": false
+    }
+  ]
+}

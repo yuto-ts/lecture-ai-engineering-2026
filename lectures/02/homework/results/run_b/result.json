@@ -1,0 +1,86 @@
+{
+  "config": {
+    "base_model": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "seed": 42,
+    "num_train_epochs": 5,
+    "warmup_steps": 6,
+    "lr": 0.0002,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "max_seq_len": 512,
+    "max_new_tokens": 200,
+    "gen": {
+      "do_sample": false
+    }
+  },
+  "versions": {
+    "torch": "2.11.0",
+    "transformers": "5.18.0",
+    "peft": "0.21.1",
+    "trl": "1.14.2"
+  },
+  "device": "mps",
+  "data": {
+    "file": "glossary_sft_plus.jsonl",
+    "records": 239
+  },
+  "train": {
+    "seconds": 4315.9,
+    "steps": 150,
+    "loss_history": [
+      3.474721908569336,
+      2.973360061645508,
+      2.5280609130859375,
+      2.199142646789551,
+      1.8787321090698241,
+      1.631692123413086,
+      1.1436664581298828,
+      1.0250890731811524,
+      0.7895551681518554,
+      0.6876019477844239,
+      0.6281949520111084,
+      0.5777970314025879,
+      0.34535267353057864,
+      0.2994372367858887,
+      0.26281511783599854,
+      0.22517614364624022,
+      0.23612031936645508,
+      0.21032240390777587,
+      0.15693917274475097,
+      0.15843636989593507,
+      0.14699771404266357,
+      0.14130622148513794,
+      0.1494913935661316,
+      0.14401824474334718,
+      0.11896334886550904,
+      0.12805114984512328,
+      0.12934490442276,
+      0.1288902521133423,
+      0.12163094282150269,
+      0.11311758756637573
+    ]
+  },
+  "summaries": [
+    {
+      "label": "tuned",
+      "seconds": 161.7,
+      "seen_correct": "8/8",
+      "seen_similarity": 1.0,
+      "paraphrase_correct": "3/8",
+      "paraphrase_similarity": 0.445,
+      "unknown_correct": "0/6",
+      "unknown_abstained": "2/6"
+    },
+    {
+      "label": "tuned+search",
+      "seconds": 189.4,
+      "seen_correct": "5/8",
+      "seen_similarity": 0.863,
+      "paraphrase_correct": "2/8",
+      "paraphrase_similarity": 0.411,
+      "unknown_correct": "1/6",
+      "unknown_abstained": "0/6"
+    }
+  ]
+}

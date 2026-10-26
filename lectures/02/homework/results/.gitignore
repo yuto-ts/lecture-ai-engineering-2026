@@ -1,0 +1,3 @@
+# 学習した adapter（約 24MB）とチェックポイントはコミットしない
+adapter/
+ckpt/

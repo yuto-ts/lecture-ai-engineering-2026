@@ -1,0 +1,206 @@
+{
+  "summary": {
+    "label": "base+search",
+    "seconds": 198.8,
+    "seen_correct": "5/8",
+    "seen_similarity": 0.566,
+    "paraphrase_correct": "3/8",
+    "paraphrase_similarity": 0.312,
+    "unknown_correct": "3/6",
+    "unknown_abstained": "2/6"
+  },
+  "rows": [
+    {
+      "kind": "seen",
+      "question": "「LoRA」とは何ですか？",
+      "raw": "LoRA は、事前学習済みの重み（パラメータ）を固定し、学習するパラメータの更新分を 2 つの小さな行列の積（低ランク行列）で表す PEFT（Parameter-Efficient Fine-Tuning）手法です。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.403,
+      "search_hit": true
+    },
+    {
+      "kind": "seen",
+      "question": "「ハルシネーション」とは何ですか？",
+      "raw": "LLM（大規模言語モデル）が事実と異なる内容や存在しない情報を、もっともらしく生成してしまう現象です。モデルが知らないこと（最新情報、組織や講座に固有の情報など）を聞いたときに起きやすいです。外部データをツールで参照させる、根拠を示させる、評価で検出する、などで抑えることができます。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.92,
+      "search_hit": true
+    },
+    {
+      "kind": "seen",
+      "question": "「既定モデル」とは何ですか？",
+      "raw": "既定モデルは、AIE2026 の演習と宿題で標準に使うモデルを指します。\n\nその具体的な例として、**gemini-3.5-flash-lite** が選定されています。このモデルは、無料枠のレート制限と講座運営の安定性を考慮して選択されており、環境変数 `AIE_MODEL` で他のモデルに切り替えてもよいという特徴があります。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.674,
+      "search_hit": true
+    },
+    {
+      "kind": "seen",
+      "question": "「宿題の3レベル」とは何ですか？",
+      "raw": "AIE2026 の宿題の構成において、「基礎（講義内容の確認）」「実装（自分でコードを書く）」「発展（調査や試行）」の 3 段階があり、どれか 1 つに取り組めばその回の宿題は完了。原則として採点はしない。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.944,
+      "search_hit": true
+    },
+    {
+      "kind": "seen",
+      "question": "「lecNN-start タグ」とは何ですか？",
+      "raw": "「lecNN-start タグ」は、AIE2026 の講座 repo で、各回の演習開始時点の Git タグです。前の回が終わっていなくても、このタグからブランチを作ればその回の演習を始められる。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.749,
+      "search_hit": true
+    },
+    {
+      "kind": "seen",
+      "question": "「Pi」とは何ですか？",
+      "raw": "検索結果に「Pi」とは何ですか？」という質問は見つかりませんでした。",
+      "correct": false,
+      "abstained": true,
+      "similarity": 0.035,
+      "search_hit": false
+    },
+    {
+      "kind": "seen",
+      "question": "「answer.md」とは何ですか？",
+      "raw": "AIE2026 で各回の演習・宿題の結果を書くファイルです。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.389,
+      "search_hit": true
+    },
+    {
+      "kind": "seen",
+      "question": "「ツールの名前空間」とは何ですか？",
+      "raw": "ツールの名前空間とは、複数の MCP サーバーを使う場合、同じ名前のツールを区別するために「サーバー名_ツール名」のように接頭辞を付けること。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.41,
+      "search_hit": true
+    },
+    {
+      "kind": "paraphrase",
+      "question": "Low-Rank Adaptation ってどういう仕組みですか？",
+      "raw": "LoRA（低ランク適応）は、**「事前学習済みの重み（パラメータ）を固定し、学習するパラメータのみを小さく学習する」**という仕組みです。\n\n具体的には以下の 2 つの要素で構成されます。\n\n1.  **固定された重み**：学習前に学習済みの重み（アダプタ）を固定して保存します。\n2.  **学習する小行列**：学習するパラメータを 2 つの小さな行列の積（低ランク行列）で表し、その小さな行列だけを学習します。\n\nこのように、学習するパラメータの数を減らし、学習結果（アダプタ）も小さく保存できるため、学習が効率的に行えます。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.426,
+      "search_hit": true
+    },
+    {
+      "kind": "paraphrase",
+      "question": "AIE2026 の演習で標準的に使うモデルはどれですか？",
+      "raw": "AIE2026 の演習で標準的に使うモデルは、検索結果に該当する用語集が見つかりませんでした。",
+      "correct": false,
+      "abstained": true,
+      "similarity": 0.296,
+      "search_hit": false
+    },
+    {
+      "kind": "paraphrase",
+      "question": "この講座の宿題はどんなレベル分けになっていますか？",
+      "raw": "この講座の宿題は、以下のレベル分けになっています。\n\n*   **レベル 1**: 基礎的な知識を習得する\n*   **レベル 2**: 基本的な概念を理解する\n*   **レベル 3**: 応用能力を高める\n*   **レベル 4**: 深い理解と批判的思考を促す",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.079,
+      "search_hit": false
+    },
+    {
+      "kind": "paraphrase",
+      "question": "Pi coding agent はどんなソフトウェアですか？",
+      "raw": "Pi coding agent は、ターミナルで動くオープンソース（MIT ライセンス）のコーディングエージェントです。\n\nその基本構造は以下の通りです：\n*   **最小限の機能とシステムプロンプト**で構成されます。\n*   利用者が拡張して使う設計です。\n*   2026 年 10 月に 1.0 が公開されました。\n*   npm パッケージ名は `@earendil-works/pi-coding-agent` です。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.758,
+      "search_hit": true
+    },
+    {
+      "kind": "paraphrase",
+      "question": "LLM がもっともらしい嘘をつく現象を何と呼びますか？",
+      "raw": "LLM（大規模言語モデル）がもっともらしい嘘をつく現象を**偽情報**と呼びます。\n\nこの用語集の検索結果に基づき、LLM は大量のテキストで学習し、入力に続くトークンを予測することで文章を生成するモデルであり、質問応答や要約、コード生成など多くのタスクを指示（プロンプト）を変えるだけでこなせるため、その特性が「偽情報」の生成に直接関与していると考えられます。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.172,
+      "search_hit": true
+    },
+    {
+      "kind": "paraphrase",
+      "question": "複数の MCP サーバーでツール名がぶつかるときはどうしますか？",
+      "raw": "複数の MCP サーバーでツール名がぶつかるときは、**「MCP サーバーがツール名を共有する（または参照する）」**という仕組みで解決します。\n\n用語集の検索結果（特に「MCP（Model Context Protocol）」の定義）によると、MCP サーバーはツール（やリソース、プロンプト）を公開する際に、**「ツールの名前・説明・引数のスキーマ」**を公開します。この公開されたスキーマに基づいて、クライアント（MCP クライアント）はツールを実行する際に、そのスキーマに従ってツール名を参照・呼び出すことができます。\n\nしたがって、複数の MCP サーバー間でツール名が衝突する場合は、**各 MCP サーバーが公開したスキーマに基づいて、そのツール名を共通で認識・呼び出す**ことで解決されます。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.079,
+      "search_hit": true
+    },
+    {
+      "kind": "paraphrase",
+      "question": "QLoRA は LoRA と何が違いますか？",
+      "raw": "QLoRA は LoRA と異なりますが、**ベースモデルの重みを 4 ビットなどに量子化してメモリを節約したうえで、LoRA で学習する手法**です。\n\nこの特徴は以下の通りです。\n*   **量子化**: LoRA のように重みを固定し、学習分を 2 つの小さな行列の積で表す方法と異なり、ベースモデルの重みを 4 ビットなどに量子化します。\n*   **メモリ効率**: 量子化された重みをメモリに保存し、LoRA によって学習する手法です。\n*   **適用対象**: 本講座の第 2 回演習では、モデルが GPU に載るため LoRA で学習し、4 ビットで読み込んだときのメモリと出力の違いを発展で比べるという目的で QLoRA を扱います。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.505,
+      "search_hit": true
+    },
+    {
+      "kind": "paraphrase",
+      "question": "この講座の宿題の結果はどのファイルに書いて提出しますか？",
+      "raw": "この講座の宿題の結果は、**「この講座の宿題の結果はどのファイルに書いて提出しますか？」**という質問に見つかりませんでした。",
+      "correct": false,
+      "abstained": true,
+      "similarity": 0.181,
+      "search_hit": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「RAG」とは何ですか？",
+      "raw": "検索結果に「RAG」とは何ですか？」という質問は見つかりませんでした。",
+      "correct": true,
+      "abstained": true,
+      "search_hit": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「知識蒸留」とは何ですか？",
+      "raw": "知識蒸留とは、化学や物理学における**「知識の蒸発」**を指す用語です。\n\nこの概念は、知識の蓄積や知識の整理を目的に、知識を「知識の蒸発」して抽出・整理するプロセスを意味します。例えば、知識の蓄積を目的に知識を蒸発して抽出・整理するプロセスを意味します。",
+      "correct": false,
+      "abstained": false,
+      "search_hit": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「RLHF」とは何ですか？",
+      "raw": "RLHF（Reinforcement Learning from Human Feedback）とは、人間のフィードバックに基づいて生成された言語モデルの性能を評価し、そのモデルを改善する学習プロセスです。",
+      "correct": true,
+      "abstained": false,
+      "search_hit": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「ベクトルデータベース」とは何ですか？",
+      "raw": "検索結果に「ベクトルデータベース」とは何ですか？」という質問は見つかりませんでした。",
+      "correct": false,
+      "abstained": true,
+      "search_hit": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「Mixture of Experts」とは何ですか？",
+      "raw": "Mixture of Experts（MOE）とは、複数の専門家が異なる視点から問題の解法を提案し、その結果を統合して最終的な答えを生成する手法です。",
+      "correct": true,
+      "abstained": false,
+      "search_hit": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「プロンプトインジェクション」とは何ですか？",
+      "raw": "プロンプトインジェクションとは、LLM（大規模言語モデル）に渡す入力文を、質問だけでなく、役割、制約、出力形式、例などを含めることで、出力を方向づける攻撃手法です。",
+      "correct": false,
+      "abstained": false,
+      "search_hit": true
+    }
+  ]
+}
