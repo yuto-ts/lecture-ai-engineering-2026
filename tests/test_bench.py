@@ -1,6 +1,19 @@
 """計測スクリプトの集計部分のテスト（LLMもAPIキーも使わない）。"""
 
-from app.bench import Record, quota_info, summarize
+from app.bench import Record, quota_info, rate_limits, summarize
+
+
+def test_rate_limits_keeps_only_limit_headers():
+    claude = {
+        "anthropic-ratelimit-requests-limit": "50",
+        "anthropic-ratelimit-requests-remaining": "49",
+        "anthropic-ratelimit-requests-reset": "2026-10-26T04:04:43Z",
+        "anthropic-ratelimit-output-tokens-limit": "8000",
+        "content-type": "text/event-stream",
+    }
+    assert rate_limits(claude) == "output-tokens-limit=8000;requests-limit=50"
+    openai = {"x-ratelimit-limit-requests": "500", "x-ratelimit-remaining-requests": "499"}
+    assert rate_limits(openai) == "limit-requests=500"
 
 
 def test_quota_info_reads_429_details():
