@@ -1,0 +1,206 @@
+{
+  "summary": {
+    "label": "tuned+search",
+    "seconds": 189.4,
+    "seen_correct": "5/8",
+    "seen_similarity": 0.863,
+    "paraphrase_correct": "2/8",
+    "paraphrase_similarity": 0.411,
+    "unknown_correct": "1/6",
+    "unknown_abstained": "0/6"
+  },
+  "rows": [
+    {
+      "kind": "seen",
+      "question": "「LoRA」とは何ですか？",
+      "raw": "事前学習済みの重みを固定し、学習するパラメータを2つの小さな行列の積（LoRAのランク）で表し、その小さな行列だけを学習するPEFT手法。学習するパラメータが少なく、学習結果（アダプタ）も小さいファイルで保存できる。本講座の第2回演習ではLoRAを扱う。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.889,
+      "search_hit": true
+    },
+    {
+      "kind": "seen",
+      "question": "「ハルシネーション」とは何ですか？",
+      "raw": "LLMが知らないこと（最新情報、組織や講座に固有の情報など）を聞いたときに起きやすい誤情報や誤内容を、もっともらしく生成してしまう現象。モデルが知らないこと（最新情報、組織や講座に固有の情報など）を、ツールで参照させる、根拠を示させる、評価で検出する、などで抑える。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.717,
+      "search_hit": true
+    },
+    {
+      "kind": "seen",
+      "question": "「既定モデル」とは何ですか？",
+      "raw": "AIE2026の演習と宿題で標準に使うモデルは gemini-3.5-flash-lite。無料枠のレート制限と講座運営の安定性を考えて選んでいる。環境変数 AIE_MODEL で他のモデルに切り替えてよく、自分で契約したAPIを使ってもよい。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0,
+      "search_hit": true
+    },
+    {
+      "kind": "seen",
+      "question": "「宿題の3レベル」とは何ですか？",
+      "raw": "講義内容の確認、自分でコードを書く実装、調査や試行的発展の3段階があり、どれか1つに取り組めばその回の宿題は完了。原則として採点はしない。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.761,
+      "search_hit": true
+    },
+    {
+      "kind": "seen",
+      "question": "「lecNN-start タグ」とは何ですか？",
+      "raw": "AIE2026の講座repoで、各回の演習開始時点のコードに付けているGitタグ（例：lec03-start）。前の回が終わっていなくても、このタグからブランチを作ればその回の演習を始められる。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0,
+      "search_hit": true
+    },
+    {
+      "kind": "seen",
+      "question": "「Pi」とは何ですか？",
+      "raw": "ターミナルで動くオープンソース（MITライセンス）のコーディングエージェント。最小限の機能とシステムプロンプトで構成し、利用者が拡張して使う設計。2026年10月に1.0が公開された。npmのパッケージ名は @earendil-works/pi-coding-agent。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0,
+      "search_hit": false
+    },
+    {
+      "kind": "seen",
+      "question": "「answer.md」とは何ですか？",
+      "raw": "AIE2026の演習・宿題の結果を記録するファイル。各回の作業ブランチから自分のforkの main へPRを出して提出する。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.633,
+      "search_hit": true
+    },
+    {
+      "kind": "seen",
+      "question": "「ツールの名前空間」とは何ですか？",
+      "raw": "複数のMCPサーバーを使うとき、同じ名前のツールを区別するために「サーバー名_ツール名」のように接頭辞を付けること。本講座の app/agent.py は設定ファイルのサーバー名を自動で付ける（例: glossary_search_glossary）。ツールが増えるほどモデルに渡す説明文も増え、呼び分けの精度とトークン数に影響する。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.905,
+      "search_hit": true
+    },
+    {
+      "kind": "paraphrase",
+      "question": "Low-Rank Adaptation ってどういう仕組みですか？",
+      "raw": "事前学習済みの重みを固定し、学習するパラメータを2つの小さな行列の積（LoRAのランク）で表し、その小さな行列だけを学習するPEFT手法。学習するパラメータが少なく、学習結果（アダプタ）も小さいファイルで保存できる。本講座の第2回演習ではLoRAを扱う。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.889,
+      "search_hit": true
+    },
+    {
+      "kind": "paraphrase",
+      "question": "AIE2026 の演習で標準的に使うモデルはどれですか？",
+      "raw": "講義資料に記載がありません。講義室のWebページか運営に確認が必要です。",
+      "correct": false,
+      "abstained": true,
+      "similarity": 0.076,
+      "search_hit": false
+    },
+    {
+      "kind": "paraphrase",
+      "question": "この講座の宿題はどんなレベル分けになっていますか？",
+      "raw": "AIE2026の宿題は講座運営に任せます。講義資料や運営に確認が必要です。",
+      "correct": false,
+      "abstained": true,
+      "similarity": 0.26,
+      "search_hit": false
+    },
+    {
+      "kind": "paraphrase",
+      "question": "Pi coding agent はどんなソフトウェアですか？",
+      "raw": "用語集に記載がありません。Piはツールの呼び出しをコマンドラインで控える、Claude CodeやCopilotのエージェントモードを、Piのターミナルで動くオープンソース（MITライセンス）のコーディングエージェント。中身はLLM＋ループ＋ツールというAIエージェントの構造そのもの。",
+      "correct": true,
+      "abstained": true,
+      "similarity": 0.315,
+      "search_hit": true
+    },
+    {
+      "kind": "paraphrase",
+      "question": "LLM がもっともらしい嘘をつく現象を何と呼びますか？",
+      "raw": "LLMが真の事実と異なる内容や形式を出力するよう心を奪うこと。指示文の真偽を指示に挟んで質問応答を返す（RLHF）や、ツールを真の事実をツール名で書いながら使う（Copilot Chat、Claude Desktop、Cursor）。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.218,
+      "search_hit": true
+    },
+    {
+      "kind": "paraphrase",
+      "question": "複数の MCP サーバーでツール名がぶつかるときはどうしますか？",
+      "raw": "同じ名前のツールを複数のサーバーに付けていること。サーバーごとに不同的に名前付けているほうが、ツール名の衝突を避ける。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.222,
+      "search_hit": true
+    },
+    {
+      "kind": "paraphrase",
+      "question": "QLoRA は LoRA と何が違いますか？",
+      "raw": "LoRAで使う小さな行列を、4ビットなどで量子化したままメモリに載せること。より大きなモデルを小さなGPUで扱える。本講座の第2回演習ではモデルがGPUに載るためLoRAで学習し、4ビットで読み込んだときのメモリと出力の違いを発展で比べる。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.79,
+      "search_hit": true
+    },
+    {
+      "kind": "paraphrase",
+      "question": "この講座の宿題の結果はどのファイルに書いて提出しますか？",
+      "raw": "AIE2026の宿題の提出ファイル。lectures/NN/lecture01/note.md にあり、提出前に自分で確認して提出する。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.516,
+      "search_hit": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「RAG」とは何ですか？",
+      "raw": "LLMが実際に利用する入力と、その結果をモデルに戻すためのサイクルを、データやルールで固定したプロンプトで回す仕組み。モデルの周りをループし、その結果を次のステップへ伝えるためのエージェントの構成要素。Claude Code、Copilotのエージェントモード、Piなどがある。",
+      "correct": false,
+      "abstained": false,
+      "search_hit": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「知識蒸留」とは何ですか？",
+      "raw": "AIE2026の演習と宿題で標準に使うツール。Pydantic AIの tools設定に「tool_name: description, arguments」として書く。",
+      "correct": false,
+      "abstained": false,
+      "search_hit": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「RLHF」とは何ですか？",
+      "raw": "AIモデルを人の証（評価や入力）で補完・逆学習させるためのループ。Claude CodeやPiなど、エージェントのコードやツールの増やしなおしがたらく。",
+      "correct": true,
+      "abstained": false,
+      "search_hit": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「ベクトルデータベース」とは何ですか？",
+      "raw": "LLMが値を数値に切り替えるためのエディタ。Pydantic AIでは [VectorStore](https://pydantic.ai/pydantic-ai/examples/LLM/VectorStore.html) で利用する。",
+      "correct": false,
+      "abstained": false,
+      "search_hit": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「Mixture of Experts」とは何ですか？",
+      "raw": "複数のモデルやツールを同じ入力に渡して、それぞれの結果を統合する手法。モデルが知らなくても同じ入力で呼び出すその側のツールやリソースを「MCPサーバー」とする。1つの質問で複数のサーバーを渡すことで、1つの入力で複数の結果を返す、や、結果を別のモデルで評価する、などの可能性が上がる。",
+      "correct": false,
+      "abstained": false,
+      "search_hit": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「プロンプトインジェクション」とは何ですか？",
+      "raw": "モデルが次のトークンを選べるように設ける入力文の偽で、真の回答を返すことで質問を逃す攻撃。Piiツールでは設定ファイルのproxy.txtに[\"pii-inject\", \"json\"]を列挙し、ツール呼び出しで渡す。",
+      "correct": false,
+      "abstained": false,
+      "search_hit": true
+    }
+  ]
+}

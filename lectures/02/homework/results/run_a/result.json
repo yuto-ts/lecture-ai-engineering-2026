@@ -1,0 +1,91 @@
+{
+  "config": {
+    "base_model": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "seed": 42,
+    "num_train_epochs": 5,
+    "warmup_steps": 6,
+    "lr": 0.0002,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "max_seq_len": 512,
+    "max_new_tokens": 200,
+    "gen": {
+      "do_sample": false
+    }
+  },
+  "versions": {
+    "torch": "2.11.0",
+    "transformers": "5.18.0",
+    "peft": "0.21.1",
+    "trl": "1.14.2"
+  },
+  "device": "mps",
+  "data": {
+    "file": "glossary_sft.jsonl",
+    "records": 116
+  },
+  "train": {
+    "seconds": 2763.1,
+    "steps": 75,
+    "loss_history": [
+      3.7046737670898438,
+      2.8482698440551757,
+      2.4981332778930665,
+      1.9253349304199219,
+      1.7519872665405274,
+      1.6248245239257812,
+      1.0768424987792968,
+      1.013602352142334,
+      0.8092849731445313,
+      0.5434876918792725,
+      0.5077292442321777,
+      0.516261100769043,
+      0.349540114402771,
+      0.3487393379211426,
+      0.4087777614593506
+    ]
+  },
+  "summaries": [
+    {
+      "label": "base",
+      "seconds": 933.9,
+      "seen_correct": "0/8",
+      "seen_similarity": 0.057,
+      "paraphrase_correct": "0/8",
+      "paraphrase_similarity": 0.09,
+      "unknown_correct": "3/6",
+      "unknown_abstained": "0/6"
+    },
+    {
+      "label": "base+search",
+      "seconds": 198.8,
+      "seen_correct": "5/8",
+      "seen_similarity": 0.566,
+      "paraphrase_correct": "3/8",
+      "paraphrase_similarity": 0.312,
+      "unknown_correct": "3/6",
+      "unknown_abstained": "2/6"
+    },
+    {
+      "label": "tuned",
+      "seconds": 157.5,
+      "seen_correct": "3/8",
+      "seen_similarity": 0.481,
+      "paraphrase_correct": "1/8",
+      "paraphrase_similarity": 0.249,
+      "unknown_correct": "3/6",
+      "unknown_abstained": "0/6"
+    },
+    {
+      "label": "tuned+search",
+      "seconds": 180.4,
+      "seen_correct": "3/8",
+      "seen_similarity": 0.735,
+      "paraphrase_correct": "1/8",
+      "paraphrase_similarity": 0.277,
+      "unknown_correct": "1/6",
+      "unknown_abstained": "0/6"
+    }
+  ]
+}

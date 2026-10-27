@@ -1,0 +1,184 @@
+{
+  "summary": {
+    "label": "tuned",
+    "seconds": 157.5,
+    "seen_correct": "3/8",
+    "seen_similarity": 0.481,
+    "paraphrase_correct": "1/8",
+    "paraphrase_similarity": 0.249,
+    "unknown_correct": "3/6",
+    "unknown_abstained": "0/6"
+  },
+  "rows": [
+    {
+      "kind": "seen",
+      "question": "「LoRA」とは何ですか？",
+      "raw": "事前学習済みの重みは固定したまま、重みの更新分を2つの小さな行列の積（低ランク行列）で表し、その小さな行列だけを学習するPEFT手法。学習するパラメータが少なく、学習結果（アダプタ）も小さいファイルで保存できる。本講座の第2回演習ではLoRAを扱う。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0
+    },
+    {
+      "kind": "seen",
+      "question": "「ハルシネーション」とは何ですか？",
+      "raw": "LLMが事実と異なる内容や存在しない情報を、もっともらしく生成してしまう現象。モデルが知らないこと（最新情報、組織や組織に属さない情報など）を聞き出すために使う検出器やツール。本講座の第2回演習では、ツールを呼び出すことで外部データをLLMに渡して、その結果をLLMが解釈して報告する（データドリルによるハルシネーションの検出）。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.566
+    },
+    {
+      "kind": "seen",
+      "question": "「既定モデル」とは何ですか？",
+      "raw": "AIE2026の演習と宿題で標準に使うモデルは gemini-3.5-flash-lite。無料枠のレート制限と講座運営の安定性を考えて選んでいる。環境変数 AIE_MODEL で他のモデルに切り替えてよく、自分で契約したAPIを使ってもよい。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 1.0
+    },
+    {
+      "kind": "seen",
+      "question": "「宿題の3レベル」とは何ですか？",
+      "raw": "AIE2026の宿題の構成。基礎知識の確認（レベル1）、実践的な作業やレポート（レベル2）、課題の提出や討論（レベル3）。どのレベルをどれほど深く掘り進め、どの程度成果を出せるかを決める。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.298
+    },
+    {
+      "kind": "seen",
+      "question": "「lecNN-start タグ」とは何ですか？",
+      "raw": "AIE2026の講座開始時の検索・フィルタリング用タグ。各回の演習では同じタグにしないので、同じ回の演習で異なる結果を返す。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.314
+    },
+    {
+      "kind": "seen",
+      "question": "「Pi」とは何ですか？",
+      "raw": "公開されたソースコードの書き方と解釈の揺れを最小限に抑えるためのプログラミングフレームワーク。Geminiのコード補完に優れる、Claudeに則る設定がある。本講座の基礎となる。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.107
+    },
+    {
+      "kind": "seen",
+      "question": "「answer.md」とは何ですか？",
+      "raw": "AIE2026の演習と宿題の答えをMarkdownで書くファイル。提出時にreadmeに書かれた通り抽出するので、どこに書かれたかを確認できる。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.323
+    },
+    {
+      "kind": "seen",
+      "question": "「ツールの名前空間」とは何ですか？",
+      "raw": "複数のモデルやツールを扱うとき、同じ名前を区別するために「モデル名・ツール名・関数名」を3文字のアルファベットで付けること。モデルは付けられるが、ツールや関数は持つ。本講座ではツールを呼び出す関数名をツール名として使う。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.244
+    },
+    {
+      "kind": "paraphrase",
+      "question": "Low-Rank Adaptation ってどういう仕組みですか？",
+      "raw": "モデルの低ランク（低ランクベクトルや低ランク矩阵）を学習する手法。学習するパラメータが少しくらい増えるだけで、学習後の精度はモデルの大部分に依存する。本講座の第2回演習ではLoRAでLLMを低ランクモデルにする。",
+      "correct": true,
+      "abstained": false,
+      "similarity": 0.442
+    },
+    {
+      "kind": "paraphrase",
+      "question": "AIE2026 の演習で標準的に使うモデルはどれですか？",
+      "raw": "Gemini 3.5 Chat。本講座の演習環境は https://aie-aikan.vscode.net/ で起動し、モデルは auto-detected の Gemini 3.5 Chat。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.209
+    },
+    {
+      "kind": "paraphrase",
+      "question": "この講座の宿題はどんなレベル分けになっていますか？",
+      "raw": "AIE2026の宿題は、基礎から応用まで幅広く、どのレベルに収めるかを決めるのは宿題の渡す側（講義室の宿題担当）の判断が主にあり、本人の自主学習の結果はカウントしない。本講座の宿題は基礎と応用の両方をカバーする設計が一般的。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.223
+    },
+    {
+      "kind": "paraphrase",
+      "question": "Pi coding agent はどんなソフトウェアですか？",
+      "raw": "GitHubの「Pi」とは、コードをアルゴリズムで書き、それを機械に渡して実行するプログラミングエージェントの最低レベルのツールセット。Claude Code、Cursor、GitHub CopilotからPiを呼ぶ。本講座ではPiをPythonで読み込む（環境変数 PI=codepi）ので、同じツールセットの中で互いに接続できる。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.158
+    },
+    {
+      "kind": "paraphrase",
+      "question": "LLM がもっともらしい嘘をつく現象を何と呼びますか？",
+      "raw": "入力と出力の振る舞いを単純にモデルに渡すだけで、モデルの学習データのように真の回答を返すのを避けるための手法。返答の途中にフィードバックを挟む、指示文やルールを付ける、評価を返答の形式から見て行う、などの方法がある。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.218
+    },
+    {
+      "kind": "paraphrase",
+      "question": "複数の MCP サーバーでツール名がぶつかるときはどうしますか？",
+      "raw": "AIE2026のMCPサーバー設定ファイル（mcp_servers.json）で列挙する。同じ機能の異なるツールや同じツールを異なるサーバーに渡すのは禁止的。同じサーバーに渡す場合は同じ名前にする。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.199
+    },
+    {
+      "kind": "paraphrase",
+      "question": "QLoRA は LoRA と何が違いますか？",
+      "raw": "LoRAで学習する規模を大きくする手法。重みを2ビットで数えることでメモリと計算量を減らす。本講座の第2回演習では使う。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.309
+    },
+    {
+      "kind": "paraphrase",
+      "question": "この講座の宿題の結果はどのファイルに書いて提出しますか？",
+      "raw": "宿題の番号（例：第1回講座の宿題 A）を番号ファイルに書き、その番号をPCに貼って提出する。提出しないときは番号を空白にして提出する。",
+      "correct": false,
+      "abstained": false,
+      "similarity": 0.232
+    },
+    {
+      "kind": "unknown",
+      "question": "「RAG」とは何ですか？",
+      "raw": "LLMが外部の知識やデータ源を呼び出して、質問に応じて回答を与える仕組み。モデルの知識更新や、エージェントの振る舞い（検索、ツール呼び出し）を、データに貼ることで実現できる。",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「知識蒸留」とは何ですか？",
+      "raw": "AIE2026の宿題・演習の準備・評価の進め方。本講座の知識を、質問応答の精度に焦点を当てた、短い文章で伝えるレベルに絞る。本講座の講義では知識の量より表現の質を重視する。",
+      "correct": false,
+      "abstained": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「RLHF」とは何ですか？",
+      "raw": "モデルの質問応答を人間への評価で改善させるループ。評価は「正しいか」だけでなく、「人間が望ましくない調子にないか」で判断する。",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「ベクトルデータベース」とは何ですか？",
+      "raw": "大量のテキストや画像を共通の型で表し、検索で同じ質問に答えるエージェントのツール集合。OpenAI Web、Gemini、Piなどがある。",
+      "correct": false,
+      "abstained": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「Mixture of Experts」とは何ですか？",
+      "raw": "複数の専門家の数を決めるか、またはその数を学習するほど大きさを決めるか、どちらかかを選ぶか、という選択をモデルに渡すハイパーパラメータ。学習するデータの多様性を増やし、どの専門家のどの領域に集中させるための設計の広がり。",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "kind": "unknown",
+      "question": "「プロンプトインジェクション」とは何ですか？",
+      "raw": "LLMがモデルに渡す質問の内容。渡すにはツールの名前・引数・戻す値・出力フォーマットを、秘密の値や内部データに置き換えておくと、誰が質問を渡しても同じ反応を返る。本講座の第2回演習では、ツールを呼び出す前のコメントで、秘密の値を引数に置き換えておくと、誰が質問を渡しても同じ反応を返る。",
+      "correct": false,
+      "abstained": false
+    }
+  ]
+}
