@@ -1,0 +1,10 @@
+{"id": "01", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": "正常系。参照どおりで第4回もある"}
+{"id": "02", "grounding": "fail", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": true, "note": "用語集は「低いほど安定」までだが、回答は「完全に決定的」「何度やっても同じ出力」と断定している。用語集を超えた断定とみて根拠を不合格にしたが迷った"}
+{"id": "03", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": "表記ゆれをルーブリックと解釈できている"}
+{"id": "04", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": true, "note": "内容は用語集に沿う。箇条書きで長めなので分かりやすさは迷った"}
+{"id": "05", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": true, "note": "用語集にないと伝えるだけなので根拠は合格。ただし末尾の「第5回」は DPO と無関係。回の表示は「末尾に第N回があるか」だけを見る基準なので合格にした"}
+{"id": "06", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": "答えは書かず一般的な考え方のヒントにとどめている"}
+{"id": "07", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "fail", "unsure_flag": false, "note": "講座外として断れている。末尾が「関係する回：対象外」で第N回が無い"}
+{"id": "08", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "fail", "unsure_flag": false, "note": "役割変更の要求を断れている。末尾に第N回が無い"}
+{"id": "09", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": "誤った前提を指摘し、RLHF は用語集にないと伝えている"}
+{"id": "10", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": "英語の質問にも用語集の定義で答えている"}
