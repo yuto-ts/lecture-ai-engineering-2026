@@ -4,6 +4,7 @@
     uv run python -m app.agent "LoRAとQLoRAの違いは？"
     uv run python -m app.agent --trace "LoRAとQLoRAの違いは？"   # ツール呼び出しを表示
     uv run python -m app.agent --graph --trace "LoRAとQLoRAの違いは？"  # 検索からグラフをたどって回答
+    uv run python -m app.agent --neighbors --trace "LoRAとQLoRAの違いは？"  # 第5回 宿題: 前後ページも付けて検索
     uv run python -m app.agent --tree --trace "LoRAとQLoRAの違いは？"  # 目次をたどって回答
     uv run python -m app.agent --full-context --trace "LoRAとQLoRAの違いは？"  # 全資料を一度に渡す
     uv run python -m app.agent --mcp --trace "LoRAとは？"        # 第5回: ツールを MCP サーバーから受け取る
@@ -21,7 +22,7 @@ from pathlib import Path
 from contextlib import nullcontext
 from time import perf_counter
 
-from pydantic_ai import Agent
+from pydantic_ai import Agent, Tool
 from pydantic_ai.exceptions import ModelHTTPError
 from fastmcp import Client
 from pydantic_ai.mcp import MCPToolset, StdioTransport
@@ -163,6 +164,15 @@ def print_trace(result, elapsed_seconds: float | None = None) -> None:
                                 print(f"      {child['content']}")
                         if not data["children"]:
                             print(f"    （末端ページ・本文{len(node.get('content', ''))}文字を取得）")
+                elif part.tool_name == "search_materials" and '"results"' in str(part.content):
+                    # 第5回 宿題: どのページが返ったか（前後ページ付きなら role も）を一覧する
+                    results = json.loads(part.content)["results"]
+                    pages = [
+                        f"{r['page_id'].removeprefix('lec')}"
+                        + ("" if r.get("role", "hit") == "hit" else "(隣)")
+                        for r in results
+                    ]
+                    print(f"[tool return] {part.tool_name} -> {len(results)}件: {', '.join(pages)}")
                 else:
                     print(f"[tool return] {part.tool_name} -> {str(part.content)[:120]}…")
     usage = result.usage
@@ -180,6 +190,7 @@ def main() -> None:
     modes = parser.add_mutually_exclusive_group()
     modes.add_argument("--mcp", action="store_true", help="第5回: ツールを MCP サーバー（app/mcp_servers.json）から受け取る")
     modes.add_argument("--graph", action="store_true", help="検索結果からグラフをたどり、候補ページを読んで答える")
+    modes.add_argument("--neighbors", action="store_true", help="第5回 宿題: 検索結果に同じ資料の前後ページの本文も付ける")
     modes.add_argument("--tree", action="store_true", help="目次をたどり、必要なページを読んで答える")
     modes.add_argument("--full-context", action="store_true", help="検索せず、lectures.jsonの全資料を一度に渡す")
     parser.add_argument("--list-tools", action="store_true", help="モデルに見えるツール一覧を表示して終了する（APIキー不要）")
@@ -187,7 +198,11 @@ def main() -> None:
 
     target = build_mcp_agent() if args.mcp else agent
     mode = nullcontext()
-    if args.tree:
+    if args.neighbors:
+        # 指示文をそのまま使えるよう、ツール名は search_materials のまま取得処理だけ差し替える
+        neighbor_tool = Tool(tools.search_materials_with_neighbors, name="search_materials")
+        mode = target.override(tools=[neighbor_tool])
+    elif args.tree:
         mode = target.override(instructions=TREE_INSTRUCTIONS, tools=[tools.browse_tree])
     elif args.graph:
         mode = target.override(instructions=GRAPH_INSTRUCTIONS, tools=[tools.search_graph])

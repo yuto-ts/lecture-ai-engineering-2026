@@ -1,0 +1,18 @@
+[model] gemini-3.5-flash-lite
+第1回の例題における問題設定の工程では、AIモデルを導入して課題を解決するにあたり、以下の3つの要素を順に決定・検討します。
+
+1. **入力と出力を決める**
+   - AIモデルに入力する情報（X）と、モデルが出力すべき情報（Y）を定義します（同じお題でも複数の決め方があります）。（第1回・PDF p.37, 39）
+2. **評価方法を決める**
+   - 作成したシステムの「良さ」をどのように測るかを決めます（例：人が評価する人手評価や、LLMに採点させるLLM-as-a-Judgeなど）。（第1回・PDF p.37, 40）
+3. **実現性・価値を見積もる**
+   - 考えた内容が本当に実現できるか、どのくらいの精度を達成できるかを人間の性能やベースライン等を用いて見積もります。（第1回・PDF p.37, 43）
+
+--- trace ---
+[tool call]   search_materials({'query': '問題設定の工程'})
+[tool return] search_materials -> {"results": [{"page_id": "lec01-main-p037", "document_id": "lec01-main", "lecture": 1, "document_title": "AIエンジニアリング概論とA…
+[tool call]   search_materials({'query': '問題設定 入力と出力 評価方法 実現性'})
+[tool return] search_materials -> {"results": [{"page_id": "lec01-main-p038", "document_id": "lec01-main", "lecture": 1, "document_title": "AIエンジニアリング概論とA…
+[time] 回答完了まで 13.94 秒（検索・埋め込みを含む）
+[usage] 入力 5,446 tokens / 出力 269 tokens / モデル応答 3 回
+[cost] 生成APIの推定コスト: $0.002306 USD（埋め込み・索引構築分は含まない）
