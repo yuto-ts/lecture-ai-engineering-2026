@@ -1,0 +1,16 @@
+[model] gemini-3.5-flash-lite
+第1回の例題における「[1] 問題設定」の工程では、以下の事項を順に決定します。
+
+1. **入力と出力を決める**
+   （例題では「受講生の質問」を入力とし、「回答文」や「講師が答えるべき質問の選別結果」、「過去の似た質問とその回答」、「講師が確認する回答案」など、どのような形にするかを決定します）
+2. **評価方法を決める**
+3. **実現性・価値を見積もる**
+
+（根拠：第1回・PDF p.37）
+
+--- trace ---
+[tool call]   search_materials({'query': '第1回 問題設定の工程'})
+[tool return] search_materials -> {"results": [{"page_id": "lec01-main-p036", "document_id": "lec01-main", "lecture": 1, "document_title": "AIエンジニアリング概論とA…
+[time] 回答完了まで 10.93 秒（検索・埋め込みを含む）
+[usage] 入力 4,810 tokens / 出力 150 tokens / モデル応答 2 回
+[cost] 生成APIの推定コスト: $0.001818 USD（埋め込み・索引構築分は含まない）

@@ -1,0 +1,15 @@
+[model] gemini-3.5-flash-lite
+第1回の例題における「[1] 問題設定」の工程では、以下の事項を順に決定します。
+
+1. **入力と出力を決める**
+2. **評価方法を決める**
+3. **実現性・価値を見積もる**
+
+（根拠：第1回・PDF p.37）
+
+--- trace ---
+[tool call]   search_materials({'query': '第1回 問題設定の工程'})
+[tool return] search_materials -> 13件: 01-main-p036(隣), 01-main-p037, 01-main-p038, 01-main-p039(隣), 01-main-p061(隣), 01-main-p062, 01-main-p063(隣), 01-main-p046(隣), 01-main-p047, 01-main-p048(隣), 01-main-p033(隣), 01-main-p034, 01-main-p035(隣)
+[time] 回答完了まで 20.44 秒（検索・埋め込みを含む）
+[usage] 入力 4,810 tokens / 出力 95 tokens / モデル応答 2 回
+[cost] 生成APIの推定コスト: $0.001680 USD（埋め込み・索引構築分は含まない）
